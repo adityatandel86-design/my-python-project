@@ -1,8 +1,4 @@
-# ==============================
-#        PROJECT: LOGIC BOX
-# ==============================
 
-# ---------- PATTERN FUNCTIONS ----------
 
 def star_pattern(n):
     print("\nStar Pattern:")
@@ -18,19 +14,19 @@ def number_pattern(n):
         print()
 
 
-# ---------- NUMBER ANALYZER ----------
+
 
 def number_analyzer():
     try:
         num = int(input("\nEnter a number: "))
 
-        # Even or Odd
+        
         if num % 2 == 0:
             print("Even number")
         else:
             print("Odd number")
 
-        # Positive, Negative, Zero
+        
         if num > 0:
             print("Positive number")
         elif num < 0:
@@ -38,7 +34,7 @@ def number_analyzer():
         else:
             print("Zero")
 
-        # Prime check
+        
         if num > 1:
             for i in range(2, int(num ** 0.5) + 1):
                 if num % i == 0:
@@ -53,7 +49,7 @@ def number_analyzer():
         print("Invalid input! Please enter an integer.")
 
 
-# ---------- SUM OF N NUMBERS ----------
+
 
 def sum_of_numbers():
     try:
@@ -68,9 +64,6 @@ def sum_of_numbers():
 
     except ValueError:
         print("Invalid input! Please enter valid numbers.")
-
-
-# ---------- MAIN MENU ----------
 
 def main():
     while True:
@@ -111,6 +104,7 @@ def main():
             print("Invalid choice! Please select 1-5.")
 
 
-# ---------- RUN PROGRAM ----------
+
 if __name__ == "__main__":
+
     main()
